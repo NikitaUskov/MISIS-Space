@@ -238,3 +238,5 @@ button:disabled{cursor:wait;opacity:.65}.field .helper,.auth-modal .helper{color
 .month-daynum{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}.month-daynum:focus-visible{outline:3px solid #7f9edb;outline-offset:2px}.room-card .status{white-space:normal;line-height:1.4}.room-card .sub{color:#63738b}
 
 @media(max-width:900px){.period-control{grid-template-columns:auto 44px 1fr 44px}#period-prev,#period-next{width:44px;height:44px}#today-btn{min-height:44px}.topbar .breadcrumbs{display:none!important}}
+
+.closed-hours{position:absolute;left:0;right:0;bottom:0;pointer-events:none;background:repeating-linear-gradient(135deg,#edf0f5b3,#edf0f5b3 5px,#f7f8fb 5px,#f7f8fb 10px);color:#65758d;font-size:11px;padding:10px 6px}.closed-hours span{display:block;background:#f7f8fbe6;padding:4px;border-radius:5px;line-height:1.4}.day-lane .event{z-index:1}.day-hours{font-size:12px;color:#526580;margin:0 2px 14px}.mobile-add-inline:disabled{cursor:not-allowed;opacity:.55}
