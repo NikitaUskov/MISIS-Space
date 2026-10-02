@@ -16,7 +16,7 @@ const payload=b=>Object.fromEntries(['id','title','organization','responsible','
 function failure(data,status){const code=data?.error_code||data?.code;
 if(code==='signup_disabled')return Error('Регистрация пока отключена. Обратитесь к организатору календаря.');
 if(code==='user_already_exists'||code==='email_exists')return Error('Эта почта уже зарегистрирована. Перейдите во вкладку «Войти».');
-if(code==='email_not_confirmed')return Error('Подтвердите почту по ссылке из письма, затем войдите.');
+if(code==='email_not_confirmed')return Error('Вход пока недоступен для этого аккаунта. Обратитесь к организатору календаря.');
 if(code==='weak_password')return Error('Пароль не соответствует требованиям. Используйте более сложный пароль длиной от 8 символов.');
 if(code==='email_address_invalid')return Error('Проверьте адрес электронной почты.');
 if(code==='email_address_not_authorized'||code==='unexpected_failure')return Error('Не удалось завершить регистрацию. Организатору нужно проверить настройки регистрации и отправки писем.');

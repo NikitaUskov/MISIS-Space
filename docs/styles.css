@@ -86,7 +86,7 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
   .sidebar{height:auto;min-height:0;position:static;width:100%;border-right:0;border-bottom:1px solid #e8edf3;display:block}
   .brand{height:64px;padding:11px 18px;border:0;gap:10px}
   .brand-mark{width:36px;height:36px}.brand-caption{font-size:9px;margin-top:3px;letter-spacing:.55px}
-  .side-scroll,.side-foot,.topbar{display:none!important}
+  .side-scroll,.side-foot{display:none!important}
   .workspace{width:100%;min-width:0}
   .content{max-width:100%;padding:20px 12px 24px!important}
   .page-head{display:block;margin-bottom:19px!important;padding:0 3px}
@@ -210,3 +210,31 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
 .auth-tabs{display:flex;gap:6px;margin-bottom:20px;padding:4px;background:#eef3fa;border-radius:10px}.auth-tabs button{flex:1;padding:10px 8px;min-height:44px;border:0;border-radius:7px;background:transparent;color:#526580;font:inherit;cursor:pointer}.auth-tabs button[aria-pressed="true"]{background:#fff;color:#244e9b;box-shadow:0 1px 5px #152c4b14}.auth-tabs button:disabled{opacity:.65;cursor:wait}.auth-notice{padding:12px;border-radius:8px;background:#eef3fa;color:#244e9b;font-size:13px;line-height:1.5}.auth-modal input{font-size:16px}
 
 .mobile-add-wrap{display:none}@media(max-width:900px){.mobile-add-wrap{display:block;padding:0 12px 22px}}
+
+/* Состояния календаря и доступ к аккаунту */
+.account-email{font-size:12px;color:#526580;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.account-actions{align-items:center}
+.connection-error{background:#fff5ed;border-color:#f0d3b8;color:#855023}
+.filter-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px;border-top:1px solid #e8edf3;background:#f6f8fc;color:#526580;font-size:13px}
+.filter-summary span{overflow-wrap:anywhere;min-width:0}.filter-summary .link-button{font-size:12px;min-height:36px;flex-shrink:0}
+.calendar-gate{min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px 24px;text-align:center;gap:12px;color:#526580}
+.gate-icon{display:grid;place-items:center;width:52px;height:52px;background:#eef3fa;border-radius:16px;color:#4a6fc7}.gate-icon svg{width:26px;height:26px}
+.calendar-gate h2{font-size:22px;line-height:1.3;margin:4px 0 0;color:#29364d}.calendar-gate p{max-width:440px;margin:0;font-size:14px;line-height:1.55}.gate-actions{display:flex;gap:10px;margin-top:6px}
+.calendar-unavailable .calendar-scroll{min-height:0!important;max-height:none!important}.calendar-unavailable .calendar-hint,.calendar-unavailable .mobile-add-wrap{display:none!important}
+.ownership-note{font-size:13px;line-height:1.5;color:#526580;margin-top:22px}
+button:focus-visible,[role="button"]:focus-visible{outline:3px solid #7f9edb;outline-offset:3px}
+button:disabled{cursor:wait;opacity:.65}.field .helper,.auth-modal .helper{color:#63738b}.page-head p,.modal-head p{color:#64748b}.filter-count,.time-label{color:#65758d}
+@media(max-width:900px){
+ .topbar{display:flex!important;min-height:56px;gap:8px;padding:8px 12px!important}
+ .topbar .breadcrumbs{display:none}.account-actions{width:100%;justify-content:flex-end;gap:8px;flex-wrap:wrap}.account-actions .ghost{min-height:44px;font-size:13px}
+ .account-email{margin-right:auto;max-width:100%;flex:1;min-width:100px}
+ .calendar-gate{min-height:260px;padding:28px 16px}.calendar-gate h2{font-size:21px}.gate-actions{width:100%;justify-content:center}.gate-actions button{min-height:46px}
+ .filter-summary{align-items:flex-start;padding:8px 12px;gap:8px}.filter-summary .link-button{min-height:40px;padding:4px;font-size:12px}
+ .mobile-calendar:not(.is-active){display:none}
+ .auth-modal form{flex:1}.auth-modal .modal-body{padding-bottom:18px!important}
+ .view-control button,.icon-button{min-height:44px}.mobile-empty,.mobile-day-overview p{color:#63738b}
+}
+
+.month-daynum{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}.month-daynum:focus-visible{outline:3px solid #7f9edb;outline-offset:2px}.room-card .status{white-space:normal;line-height:1.4}.room-card .sub{color:#63738b}
+
+@media(max-width:900px){.period-control{grid-template-columns:auto 44px 1fr 44px}#period-prev,#period-next{width:44px;height:44px}#today-btn{min-height:44px}.topbar .breadcrumbs{display:none!important}}
