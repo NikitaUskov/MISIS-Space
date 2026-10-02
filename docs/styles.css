@@ -81,7 +81,7 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
 .mobile-calendar,.mobile-filters{display:none}
 @media(max-width:900px){
   html,body{width:100%;max-width:100%;overflow-x:clip}
-  body{font-size:15px;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  body{font-size:15px;padding-bottom:env(safe-area-inset-bottom)}
   .app{display:block;min-height:100dvh}
   .sidebar{height:auto;min-height:0;position:static;width:100%;border-right:0;border-bottom:1px solid #e8edf3;display:block}
   .brand{height:64px;padding:11px 18px;border:0;gap:10px}
@@ -92,7 +92,7 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
   .page-head{display:block;margin-bottom:19px!important;padding:0 3px}
   .page-head h1{font-size:26px;line-height:1.2;letter-spacing:-.7px;margin:0 0 7px}
   .page-head p{font-size:13px;line-height:1.48;max-width:310px;margin:0;color:#8290a2}
-  .page-head #new-booking{position:fixed;z-index:11;bottom:calc(12px + env(safe-area-inset-bottom));left:12px;right:12px;width:calc(100% - 24px);max-width:520px;margin:0 auto;min-height:52px;font-size:15px!important;box-shadow:0 8px 24px #314a8650;border-radius:14px;padding:0 20px;transform:none}
+  .page-head #new-booking{display:none}
   .page-head #new-booking svg{width:20px;height:20px}
   .rooms-overview,.hall-rule{display:none!important}
   .workspace-row,.workspace-row.agenda-open{display:block!important;min-width:0}
@@ -190,7 +190,7 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
   .drawer-content h2{font-size:24px;line-height:1.2;overflow-wrap:anywhere}
   .drawer-actions{display:flex;gap:10px}
   .drawer-actions .primary{flex:1;white-space:normal}
-  .toast{max-width:calc(100% - 30px);width:max-content;bottom:calc(79px + env(safe-area-inset-bottom));font-size:13px}
+  .toast{max-width:calc(100% - 30px);width:max-content;bottom:calc(18px + env(safe-area-inset-bottom));font-size:13px}
 }
 @media(max-width:355px){
   .content{padding-inline:9px!important}
@@ -206,3 +206,7 @@ h1{font-size:31px;font-weight:730;letter-spacing:-.9px;line-height:1.17}.page-he
 
 /* Состояние подключения и управление учётной записью */
 [hidden]{display:none!important}.connection-banner{padding:10px 14px;margin-bottom:18px;border:1px solid #dce5f3;border-radius:10px;background:#eef3fa;color:#526580;font-size:12px;line-height:1.5}.account-actions{display:flex;gap:8px;flex-shrink:0}.drawer{overflow:auto}.auth-modal{width:min(100%,460px)}.auth-modal .modal-foot{justify-content:flex-end}.auth-modal .helper{font-size:12px;color:#748199}.auth-modal form{min-height:0}.topbar{gap:12px}.topbar .breadcrumbs{min-width:0}button,button span{overflow-wrap:anywhere}@media(min-width:901px) and (max-width:1100px){.sidebar{width:210px}.content{padding-left:18px;padding-right:18px}.calendar-toolbar .period-control{flex-wrap:wrap}}@media(max-width:900px){.topbar{height:auto!important;min-height:52px;flex-wrap:wrap;padding:10px 14px!important}.account-actions{margin-left:auto}.account-actions .ghost{min-height:40px;font-size:12px}.connection-banner{font-size:12px;padding:10px 12px}.auth-modal{height:100dvh}.auth-modal .modal-foot .primary{width:100%;min-height:48px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.auth-tabs{display:flex;gap:6px;margin-bottom:20px;padding:4px;background:#eef3fa;border-radius:10px}.auth-tabs button{flex:1;padding:10px 8px;min-height:44px;border:0;border-radius:7px;background:transparent;color:#526580;font:inherit;cursor:pointer}.auth-tabs button[aria-pressed="true"]{background:#fff;color:#244e9b;box-shadow:0 1px 5px #152c4b14}.auth-tabs button:disabled{opacity:.65;cursor:wait}.auth-notice{padding:12px;border-radius:8px;background:#eef3fa;color:#244e9b;font-size:13px;line-height:1.5}.auth-modal input{font-size:16px}
+
+.mobile-add-wrap{display:none}@media(max-width:900px){.mobile-add-wrap{display:block;padding:0 12px 22px}}
